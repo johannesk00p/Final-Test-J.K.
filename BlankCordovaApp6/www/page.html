@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1,
+minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Apache Cordova</title>
+</head>
+<body class="padding pink-50 has-header has-sub-header">
+    <div class="header pink">
+        <div class="left">
+            <button class="icon ion-navicon"></button>
+        </div>
+        <div>
+
+            <form>
+                <input style="color:white; display:inline" type="button" value="Log Out" onclick="window.location.href='index.html'" />
+            </form>
+        </div>
+        <h1>Final Project</h1>
+
+    </div>
+    <div class="header pink sub shadow tab">
+        <button class="icon ion-android-star active"
+                onclick="openTab('tabAbout')">
+            Welcome
+        </button>
+        <button class="icon ion-android-home"
+                onclick="openTab('tabEvents')">
+            Home
+        </button>
+        <button class="icon ion-android-person"
+                onclick="openTab('tabMessages')">
+            About
+        </button>
+        <button class="icon ion-android-phone-portrait"
+                onclick="openTab('tabGroups')">
+            Contacts
+        </button>
+    </div>
+    <div class="tab-content active" id="tabAbout">
+        <h2 class="text-strong padding text-pink">Tab Welcome</h2>
+        <p>
+            Welcome to my Final project for the  Building and Deploying Cross Platfrom Mobile Application's course.
+        </p>
+       
+    </div>
+    <div class="tab-content" id="tabEvents">
+        <h2 class="text-strong padding text-pink">Tab Home</h2>
+        <p>
+           This is the Final Module and Test for this course. I hope you like what I have created. 
+        </p>
+    </div>
+    <div class="tab-content" id="tabMessages">
+        <h2 class="text-strong padding text-pink">Tab About</h2>
+        <p>
+            Hello my name is Johannes. I am a BIT Student at the Laurea University of Applied Science in Leppävaara.
+        </p>
+    </div>
+    <div class="tab-content" id="tabGroups">
+        <h2 class="text-strong padding text-pink">Tab Contacts</h2>
+        <p>
+            You can contact me:
+        </p>
+        <p>Phone number: 0417994349</p>
+        <p>E-Mail: johannes.koop@student.laurea.fi</p>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
